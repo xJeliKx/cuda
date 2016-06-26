@@ -403,6 +403,7 @@ h3 {
         float: none;
         margin: 0;
         text-align: center;
+        display: inline-block;
     }
    body .people-say .comment {
         text-align: center;
@@ -414,8 +415,8 @@ h3 {
     .container{
         display: inline-block;
     }
-    .cuda, .services, .team, .skills, .portfolio, .people-say, .message {
-        padding: 40px 0;
+    body .footer li {
+        padding: 5px 30px;
     }
 }
 
@@ -509,7 +510,7 @@ h3 {
     border-radius: 3px;
 }
 
-@media screen and (max-width: 865px) {
+@media screen and (max-width: 900px) {
     body .message .your-name, .email, .type-message, .submit {
         max-width: 90%;
     }
@@ -569,11 +570,18 @@ h3 {
 /*
 -------------------------------------------
 */
-@media (max-width: 420px){
-    h1, h2 {
-        font-size: 150%;
+@media (max-width: 780px){
+    h1 {
+        font-size: 100%;
         line-height: 150%;
         padding: 50px 0;
+        margin: 0;
+    }
+    h2 {
+        font-size: 150%;
+        line-height: 150%;
+        margin: 0;
+        padding: 10px;
     }
     h3 {
         font-size: 130%;
@@ -581,10 +589,22 @@ h3 {
      central-text, p{
         font-size: 100%;
         line-height: 150%;
+        margin: 0;
         
     }
-    
     body button {
         max-width: 50%;
+    }
+    .portfolio-menu li {
+        margin: 0 2px 30px;
+    }
+    .cuda, .services, .team, .skills, .portfolio, .people-say, .message {
+        padding: 5px 0 30px;
+    }
+    .team-foto {
+        margin-top: 20px;
+    }
+    .services-provide li {
+        margin: 20px 0;
     }
 }
