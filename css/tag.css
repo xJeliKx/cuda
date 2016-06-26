@@ -120,13 +120,14 @@ h3 {
     margin: 0 5px;
 }
 
-.buttons li:hover {
+.buttons a:hover {
     background-color: #643a79;
+}
+a, a:active, visited {
+    text-decoration: none;
+    color: #fff;
 }
 
-.buttons li:first-of-type {
-    background-color: #643a79;
-}
 
 .cuda-botton {
     border: 0px;
@@ -395,30 +396,6 @@ h3 {
     margin-right: 48px;
     float: left;
 }
-@media screen and (max-width: 590px) {
-    body .people-say li {
-        max-width: 75%;
-    }
-    body .people-say .people{
-        float: none;
-        margin: 0;
-        text-align: center;
-        display: inline-block;
-    }
-   body .people-say .comment {
-        text-align: center;
-    }
-    body .people-say .text {
-        display:block;
-        text-align: center;
-    }
-    .container{
-        display: inline-block;
-    }
-    body .footer li {
-        padding: 5px 30px;
-    }
-}
 
 .people-say li {
     width: 496px;
@@ -509,16 +486,6 @@ h3 {
     border: 0px;
     border-radius: 3px;
 }
-
-@media screen and (max-width: 900px) {
-    body .message .your-name, .email, .type-message, .submit {
-        max-width: 90%;
-    }
-    body button {
-        max-width: 100%;
-    }
-    
-}
 .message .submit {
     text-transform: uppercase;
     color: #fff;
@@ -571,6 +538,18 @@ h3 {
 -------------------------------------------
 */
 @media (max-width: 780px){
+        body .people-say li {
+        max-width: 75%;
+        text-align: center;
+        margin: 20px 0;
+    }
+        body .people-say .people{
+        float: none;
+        margin: 0;
+    }
+       body .people-say .comment {
+        text-align: center;
+    }
     h1 {
         font-size: 100%;
         line-height: 150%;
@@ -583,15 +562,26 @@ h3 {
         margin: 0;
         padding: 10px;
     }
-    h3 {
+    h3, .services h3 {
         font-size: 130%;
+        margin:20px;
     }
-     central-text, p{
+
+    .central-text, .skills .central-text {
+        font-size: 120%;
+        line-height: 150%;
+        margin: 20px 0;
+    }
+    p {
         font-size: 100%;
         line-height: 150%;
         margin: 0;
-        
+        padding: 10px 0;
+        }
+    .people-say .central-text{
+        padding: 10px 0;
     }
+
     body button {
         max-width: 50%;
     }
@@ -606,5 +596,26 @@ h3 {
     }
     .services-provide li {
         margin: 20px 0;
+    }
+    .container{
+        display: inline-block;
+    }
+}
+@media screen and (max-width: 900px) {
+    body .message .your-name, .email, .type-message, .submit {
+        max-width: 90%;
+    }
+    body button {
+        max-width: 100%;
+    }
+
+}
+@media screen and (max-width: 590px) {
+    body .people-say .text {
+        display:block;
+        text-align: center;
+    }
+    body .footer li {
+        padding: 5px 30px;
     }
 }
