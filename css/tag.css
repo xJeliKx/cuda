@@ -50,9 +50,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
 /*-------------------------------*/
-
 img {
     max-width: 100%;
     height: auto;
@@ -63,39 +61,36 @@ h1 {
     padding: 148px 0 54px;
     font-weight: bold;
 }
-
 h2 {
     font-size: 40px;
     font-weight: bold;
     line-height: 30px;
     text-transform: uppercase;
 }
-
 h3 {
     font-size: 24px;
     font-weight: bold;
     line-height: 18px;
     text-transform: uppercase;
 }
-
+/*
+------------------------------
+*/
 .central-text {
     font-size: 18px;
     line-height: 26px;
 }
-
 .all {
     font-family: "Titillium Web";
     text-align: center;
     font-size: 100%;
 }
-
 .cuda {
     background-color: #87509c;
     color: white;
     padding-top: 57px;
     padding-bottom: 145px;
 }
-
 .container {
     margin: 0 auto;
     max-width: 1033px;
@@ -103,12 +98,9 @@ h3 {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-
 .buttons {
     vertical-align: top;
 }
-
 .buttons li {
     cursor: pointer;
     display: inline-block;
@@ -119,16 +111,13 @@ h3 {
     border-radius: 3px;
     margin: 0 5px;
 }
-
-.buttons a:hover {
+.buttons li:hover {
     background-color: #643a79;
 }
 a, a:active, visited {
     text-decoration: none;
     color: #fff;
 }
-
-
 .cuda-botton {
     border: 0px;
     color: white;
@@ -140,11 +129,9 @@ a, a:active, visited {
     cursor: pointer;
 
 }
-
 .cuda-botton:hover {
     background: #c86a40;
 }
-
 /*
 -------------------------------------------
 */
@@ -153,11 +140,9 @@ a, a:active, visited {
     padding: 119px 0 128px;
     color: white;
 }
-
 .services h2 {
     padding-bottom: 22px;
 }
-
 .devider-services {
     width: 87px;
     height: 4px;
@@ -165,18 +150,15 @@ a, a:active, visited {
     margin: 0 auto;
     margin-bottom: 24px;
 }
-
 .services-provide li {
     font-size: 16px;
     line-height: 24px;
     display: inline-block;
     margin: 79px 48px 0 48px;
 }
-
 .services h3 {
     margin: 61px 0 21px;
 }
-
 /*
 -------------------------------------------
 */
@@ -184,12 +166,10 @@ a, a:active, visited {
     background-color: #e7f1f8;
     padding: 120px 0 127px;
 }
-
 .team h2 {
     margin-bottom: 23px;
     color: #3c4761;
 }
-
 .team .devider {
     width: 87px;
     height: 4px;
@@ -197,54 +177,42 @@ a, a:active, visited {
     margin: 0 auto;
     margin-bottom: 25px;
 }
-
 .team .central-text {
     color: #3c4761;
 }
-
 .team-list li {
     display: inline-block;
 }
-
 .team-foto {
     width: 200px;
     height: 200px;
     border-radius: 100px;
     background-color: #878787;
     margin-top: 79px;
-
 }
-
 .team h3 {
     margin: 42px 0 16px;
     color: #27283d;
 }
-
 .team-profession {
     font-size: 16px;
     line-height: 18px;
     color: #30bae7;
     margin-bottom: 27px;
-
 }
-
 .team-text {
     font-size: 16px;
     line-height: 24px;
     color: #3c4761;
     padding-bottom: 31px;
-
 }
-
 .team .soc {
     margin: 0 20px 0 20px;
 }
-
 .team .soc a {
     margin: 0 3px 0 3px;
     cursor: pointer;
 }
-
 /*
 -------------------------------------------
 */
@@ -252,29 +220,24 @@ a, a:active, visited {
     background-color: #ffffff;
     padding: 117px 0 122px;
 }
-
 .skills h2 {
     color: #3c4761;
     margin-bottom: 21px;
 }
-
 .skills-devider {
     height: 4px;
     width: 87px;
     background-color: #dfe8ed;
     margin: 0 auto;
 }
-
 .skills .central-text {
     margin: 25px 0 85px;
     color: #3c4761;
 }
-
 .skills li {
     display: inline-block;
     margin: 0 30px 0 30px;
 }
-
 .skills li p {
     text-transform: uppercase;
     margin-top: 32px;
@@ -283,7 +246,6 @@ a, a:active, visited {
     font-weight: bold;
     color: #3c4761;
 }
-
 /*
 -------------------------------------------
 */
@@ -291,24 +253,20 @@ a, a:active, visited {
     background-color: #ffdd99;
     padding: 120px 0 109px;
 }
-
 .portfolio h2 {
     color: #393939;
     margin-bottom: 22px;
 }
-
 .devider-portfolio {
     height: 4px;
     width: 87px;
     margin: 0 auto;
     background-color: #e5c37f;
 }
-
 .portfolio .central-text {
     color: #393939;
     margin: 24px 0 43px;
 }
-
 .portfolio-menu li {
     font-size: 18px;
     line-height: 38px;
@@ -320,20 +278,12 @@ a, a:active, visited {
     border-radius: 3px;
     margin: 0 5px 62px 5px;
 }
-
 .portfolio-menu li:hover {
     background: #fff;
 }
-
-.portfolio-menu li:first-of-type {
-    background: #fff;
-}
-
 .notebook li {
     margin: 0 10px 0 10px;
     display: inline-block;
-}
-
 }
 .notebook p {
     margin: 29px 0 65px;
@@ -342,7 +292,6 @@ a, a:active, visited {
     color: #393939;
     text-transform: uppercase;
 }
-
 .portfolio button {
     border: 0px;
     color: #fff;
@@ -357,11 +306,9 @@ a, a:active, visited {
     text-transform: uppercase;
     margin-top: 18px;
 }
-
 .portfolio button:hover {
     background: #14a58c;
 }
-
 /*
 -------------------------------------------
 */
@@ -370,22 +317,18 @@ a, a:active, visited {
     padding: 119px 0 128px;
     color: #fff;
 }
-
 .people-say h2 {
     margin-bottom: 21px;
 }
-
 .devider-people {
     width: 87px;
     height: 4px;
     background: #b73c6d;
     margin: 0 auto;
 }
-
 .people-say .central-text {
     padding: 24px 0 71px;
 }
-
 .people {
     border: 0px;
     width: 96px;
@@ -396,42 +339,35 @@ a, a:active, visited {
     margin-right: 48px;
     float: left;
 }
-
 .people-say li {
     width: 496px;
     text-align: left;
     margin: 0px 40px 142px 40px;
     display: inline-block;
 }
-
 .people-say div {
     text-align: left;
     display: inline-block;
 }
-
 .people-say .comment {
     font-size: 21px;
     line-height: 31px;
     font-style: italic;
     text-align: left;
 }
-
 .people-say .name {
     padding-top: 28px;
     text-transform: uppercase;
     font-size: 24px;
     line-height: 26px;
-    font-weight: bold;
-    
+    font-weight: bold; 
 }
-
 .people-say .status {
     font-size: 18px;
     line-height: 26px;
     color: #ffdd99;
 
 }
-
 /*
 -------------------------------------------
 */
@@ -440,35 +376,28 @@ a, a:active, visited {
     padding: 120px 0 114px;
     color: #fff;
 }
-
 .message h2 {
     margin-bottom: 22px;
 }
-
 .devider-message {
     width: 87px;
     height: 4px;
     background: #273a71;
     margin: 0 auto;
 }
-
 .message .central-text {
     margin: 22px 0 69px;
 }
-
 .message .your-name, .email {
     font-size: 18px;
     line-height: 56px;
 }
-
 .message .type-message {
     font-size: 18px;
     line-height: 24px;
     text-align: start;
 }
-
-.message #form-name, #form-email {
-    
+.message #form-name, #form-email { 
     padding: 0 14px;
     margin-bottom: 27px;
     border: 0px;
@@ -477,7 +406,6 @@ a, a:active, visited {
     height: 56px;
     background-color: #273a71;
 }
-
 .message #your-message {
     padding: 24px 0 162px 27px;
     width: 860px;
@@ -500,17 +428,12 @@ a, a:active, visited {
     border-bottom: 4px solid #299ec5;
     cursor: pointer;
 }
-
 .message .submit:hover {
     background-color: #299ec5;
 }
-/* .message-form {
-    max-width: 1100px;
-} */
 .footer {
     background: #344b8e;
 }
-
 .footer li {
     font-size: 24px;
     line-height: 24px;
@@ -518,22 +441,18 @@ a, a:active, visited {
     padding: 48px 29px 40px 29px;
     display: inline-block;
 }
-
 .footer a {
     color: #fff;
     text-decoration: none;
 }
-
 .footer a:hover {
     color: #30bae7;
     text-decoration: none;
 }
-
 .footer a:visited {
     color: #30bae7;
     text-decoration: none;
 }
-
 /*
 -------------------------------------------
 */
@@ -608,7 +527,6 @@ a, a:active, visited {
     body button {
         max-width: 100%;
     }
-
 }
 @media screen and (max-width: 590px) {
     body .people-say .text {
