@@ -1,42 +1,133 @@
-.all  {
-    text-align: center;
+/*-------------*/
+/*--RESET ALL--*/
+/*-------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
-.cuda  {
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*-------------------------------*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1 {
+    font-size: 3em;
+    line-height: 48px;
+    padding: 148px 0 54px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.central-text {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.all {
+    font-family: "Titillium Web";
+    text-align: center;
+    font-size: 100%;
+}
+
+.cuda {
     background-color: #87509c;
     color: white;
-    padding: 57px 0 145px;
+    padding-top: 57px;
+    padding-bottom: 145px;
 }
-.logo {
-    margin: 0 495px 0 0;
-    display: inline-block;
-  }
-.buttons  {
-    vertical-align: top;
-    margin: 0 auto;
-    display: inline-block;
 
+.container {
+    margin: 0 auto;
+    max-width: 1033px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.buttons li  {
+
+
+.buttons {
+    vertical-align: top;
+}
+
+.buttons li {
     cursor: pointer;
     display: inline-block;
     height: 32px;
     width: 77px;
-    font: 16px/32px 'Titillium Web';
+    font-size: 16px;
+    line-height: 38px;
     border-radius: 3px;
     margin: 0 5px;
 }
+
 .buttons li:hover {
     background-color: #643a79;
 }
+
 .buttons li:first-of-type {
     background-color: #643a79;
 }
-.cuda-center  {
-    font: 42px/48px  'Titillium Web';
-    padding:148px 0 54px;
-    font-weight: bold;
-}
+
 .cuda-botton {
     border: 0px;
     color: white;
@@ -44,26 +135,28 @@
     width: 293px;
     background-color: #eb7d4b;
     border-radius: 3px;
-    border-bottom: 4px  solid #c86a40;
+    border-bottom: 4px solid #c86a40;
     cursor: pointer;
 
 }
+
 .cuda-botton:hover {
     background: #c86a40;
 }
+
 /*
 -------------------------------------------
 */
 .services {
     background-color: #17c2a4;
-    padding:119px 0 128px;
+    padding: 119px 0 128px;
     color: white;
 }
-.services-h1 {
-    font: bold 40px/30px 'Titillium Web';
-    text-transform: uppercase;
-    margin-bottom: 22px;
+
+.services h2 {
+    padding-bottom: 22px;
 }
+
 .devider-services {
     width: 87px;
     height: 4px;
@@ -71,32 +164,31 @@
     margin: 0 auto;
     margin-bottom: 24px;
 }
-.services-center-text {
-    font: 18px/26px 'Titillium Web';
-}
+
 .services-provide li {
-    font: 16px/24px 'Titillium Web';
+    font-size: 16px;
+    line-height: 24px;
     display: inline-block;
     margin: 79px 48px 0 48px;
 }
-.services-h2 {
-    font: bold 24px/18px 'Titillium Web';
-    text-transform: uppercase;
+
+.services h3 {
     margin: 61px 0 21px;
 }
+
 /*
 -------------------------------------------
 */
 .team {
     background-color: #e7f1f8;
-    padding:120px 0 127px;
+    padding: 120px 0 127px;
 }
-.team h1 {
-    font: bold 40px/30px 'Titillium Web';
-    text-transform: uppercase;
+
+.team h2 {
     margin-bottom: 23px;
     color: #3c4761;
 }
+
 .team .devider {
     width: 87px;
     height: 4px;
@@ -104,13 +196,15 @@
     margin: 0 auto;
     margin-bottom: 25px;
 }
-.team-center-text {
-    font: 19px/27px 'Titillium Web';
+
+.team .central-text {
     color: #3c4761;
 }
+
 .team-list li {
     display: inline-block;
 }
+
 .team-foto {
     width: 200px;
     height: 200px;
@@ -119,28 +213,34 @@
     margin-top: 79px;
 
 }
-.team-h2 {
-    font:bold 24px/18px 'Titillium Web';
+
+.team h3 {
     margin: 42px 0 16px;
     color: #27283d;
 }
+
 .team-profession {
-    font: 16px/18px 'Titillium Web';
+    font-size: 16px;
+    line-height: 18px;
     color: #30bae7;
     margin-bottom: 27px;
-    
+
 }
+
 .team-text {
-    font: 16px/24px 'Titillium Web';
+    font-size: 16px;
+    line-height: 24px;
     color: #3c4761;
     padding-bottom: 31px;
-    
+
 }
+
 .team .soc {
     margin: 0 20px 0 20px;
 }
+
 .team .soc a {
-    margin:0 3px 0 3px;
+    margin: 0 3px 0 3px;
     cursor: pointer;
 }
 
@@ -148,60 +248,69 @@
 -------------------------------------------
 */
 .skills {
-    background-color: #ffffff ;
-    padding:117px 0 122px;
+    background-color: #ffffff;
+    padding: 117px 0 122px;
 }
-.skills h1 {
-    font: bold 40px/30px 'Titillium Web';
+
+.skills h2 {
     color: #3c4761;
     margin-bottom: 21px;
 }
+
 .skills-devider {
     height: 4px;
     width: 87px;
     background-color: #dfe8ed;
     margin: 0 auto;
 }
+
 .skills .central-text {
     margin: 25px 0 85px;
-    font: 18px/26px 'Titillium Web';
     color: #3c4761;
 }
+
 .skills li {
     display: inline-block;
     margin: 0 30px 0 30px;
 }
+
 .skills li p {
     text-transform: uppercase;
     margin-top: 32px;
-    font: bold 24px/18px 'Titillium Web';
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: bold;
     color: #3c4761;
 }
+
 /*
 -------------------------------------------
 */
-.portfolio  {
+.portfolio {
     background-color: #ffdd99;
     padding: 120px 0 109px;
 }
-.portfolio h1 {
-    font: bold 40px/30px 'Titillium Web';
+
+.portfolio h2 {
     color: #393939;
     margin-bottom: 22px;
 }
+
 .devider-portfolio {
     height: 4px;
     width: 87px;
     margin: 0 auto;
     background-color: #e5c37f;
 }
+
 .portfolio .central-text {
-    font: 18px/26px 'Titillium Web';
     color: #393939;
-    margin:24px 0 43px;
+    margin: 24px 0 43px;
 }
+
 .portfolio-menu li {
-    font: 18px/38px 'Titillium Web';
+    font-size: 18px;
+    line-height: 38px;
     text-transform: uppercase;
     width: 84px;
     height: 38px;
@@ -210,23 +319,29 @@
     border-radius: 3px;
     margin: 0 5px 62px 5px;
 }
+
 .portfolio-menu li:hover {
     background: #fff;
 }
+
 .portfolio-menu li:first-of-type {
     background: #fff;
 }
+
 .notebook li {
-    width: 540px;
     margin: 0 10px 0 10px;
     display: inline-block;
 }
+
+}
 .notebook p {
     margin: 29px 0 65px;
-    font: 18px/20px 'Titillium Web';
+    font-size: 18px;
+    line-height: 20px;
     color: #393939;
     text-transform: uppercase;
 }
+
 .portfolio button {
     border: 0px;
     color: #fff;
@@ -236,13 +351,16 @@
     border-radius: 4px;
     cursor: pointer;
     border-bottom: 4px solid #14a58c;
-    font: 18px/66px 'Titillium Web';
+    font-size: 18px;
+    line-height: 66px;
     text-transform: uppercase;
     margin-top: 18px;
 }
+
 .portfolio button:hover {
     background: #14a58c;
 }
+
 /*
 -------------------------------------------
 */
@@ -251,21 +369,23 @@
     padding: 119px 0 128px;
     color: #fff;
 }
-.people-say h1 {
-    font: bold 40px/30px 'Titillium Web';
+
+.people-say h2 {
     margin-bottom: 21px;
 }
-.devider-people{
+
+.devider-people {
     width: 87px;
     height: 4px;
     background: #b73c6d;
     margin: 0 auto;
 }
+
 .people-say .central-text {
-    font: 18px/26px 'Titillium Web';
     padding: 24px 0 71px;
 }
-.people{
+
+.people {
     border: 0px;
     width: 96px;
     height: 96px;
@@ -273,76 +393,130 @@
     background-color: #787878;
     vertical-align: top;
     margin-right: 48px;
+    float: left;
+}
+@media screen and (max-width: 590px) {
+    body .people-say li {
+        max-width: 75%;
     }
+    body .people-say .people{
+        float: none;
+        margin: 0;
+        text-align: center;
+    }
+   body .people-say .comment {
+        text-align: center;
+    }
+    body .people-say .text {
+        display:block;
+        text-align: center;
+    }
+    .container{
+        display: inline-block;
+    }
+    .cuda, .services, .team, .skills, .portfolio, .people-say, .message {
+        padding: 40px 0;
+    }
+}
+
 .people-say li {
     width: 496px;
     text-align: left;
     margin: 0px 40px 142px 40px;
     display: inline-block;
 }
-.people-say span  {
+
+.people-say div {
     text-align: left;
     display: inline-block;
-    }
+}
+
 .people-say .comment {
-    font: italic 21px/31px 'Titillium Web';
+    font-size: 21px;
+    line-height: 31px;
+    font-style: italic;
     text-align: left;
 }
+
 .people-say .name {
     padding-top: 28px;
     text-transform: uppercase;
-    font: bold 24px/26px 'Titillium Web';
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: bold;
+    
 }
+
 .people-say .status {
-    font: 18px/26px 'Titillium Web';
+    font-size: 18px;
+    line-height: 26px;
     color: #ffdd99;
+
 }
+
 /*
 -------------------------------------------
 */
 .message {
     background-color: #3c5499;
-    padding:120px 0 114px;
+    padding: 120px 0 114px;
     color: #fff;
 }
-.message h1 {
-    font: bold 40px/30px 'Titillium Web';
+
+.message h2 {
     margin-bottom: 22px;
 }
+
 .devider-message {
     width: 87px;
     height: 4px;
     background: #273a71;
     margin: 0 auto;
 }
+
 .message .central-text {
-    font: 18px/26px 'Titillium Web';
-    margin:22px 0 69px;
+    margin: 22px 0 69px;
 }
+
 .message .your-name, .email {
-    font: 18px/56px 'Titillium Web';
+    font-size: 18px;
+    line-height: 56px;
 }
+
 .message .type-message {
-    font: 18px/24px 'Titillium Web';
+    font-size: 18px;
+    line-height: 24px;
     text-align: start;
 }
-.message .your-name, .email {
-    padding: 0;
-    padding-left: 25px;
-    margin: 0 14px 27px 14px;
+
+.message #form-name, #form-email {
+    
+    padding: 0 14px;
+    margin-bottom: 27px;
     border: 0px;
     border-radius: 3px;
-    width: 389px;
+    width: 414px;
     height: 56px;
     background-color: #273a71;
 }
-.message .type-message {
-    padding: 24px 0 162px 25px;
-    width: 835px;
+
+.message #your-message {
+    padding: 24px 0 162px 27px;
+    width: 860px;
     height: 38px;
     background-color: #273a71;
     border: 0px;
     border-radius: 3px;
+}
+
+@media screen and (max-width: 865px) {
+    body .message .your-name, .email, .type-message, .submit {
+        max-width: 90%;
+    }
+    body button {
+        max-width: 100%;
+    }
+    
 }
 .message .submit {
     text-transform: uppercase;
@@ -352,35 +526,65 @@
     margin-top: 59px;
     width: 293px;
     height: 66px;
-    font: 18px/66px 'Titillium Web';
+    font-size: 18px;
+    line-height: 66px;
     border-radius: 3px;
     border-bottom: 4px solid #299ec5;
     cursor: pointer;
 }
+
 .message .submit:hover {
     background-color: #299ec5;
 }
+/* .message-form {
+    max-width: 1100px;
+} */
 .footer {
     background: #344b8e;
 }
+
 .footer li {
-    font: 600 24px/24px 'Titillium Web';
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
     padding: 48px 29px 40px 29px;
     display: inline-block;
 }
+
 .footer a {
-    color:#fff;
+    color: #fff;
     text-decoration: none;
 }
+
 .footer a:hover {
     color: #30bae7;
     text-decoration: none;
 }
+
 .footer a:visited {
     color: #30bae7;
     text-decoration: none;
 }
+
 /*
 -------------------------------------------
 */
-
+@media (max-width: 420px){
+    h1, h2 {
+        font-size: 150%;
+        line-height: 150%;
+        padding: 50px 0;
+    }
+    h3 {
+        font-size: 130%;
+    }
+     central-text, p{
+        font-size: 100%;
+        line-height: 150%;
+        
+    }
+    
+    body button {
+        max-width: 50%;
+    }
+}
